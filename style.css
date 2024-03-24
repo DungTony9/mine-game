@@ -1,0 +1,154 @@
+main {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100% !important;
+    height: 100% ;
+    background-color: white;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    width: 99%;
+    font-size: 40px;
+    text-align: center;
+    top: 15%;
+    /* background-color: blue; */
+}
+.enter-number {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    text-align: center;
+    padding: 30px;
+    /* background-color: brown; */
+}
+
+
+.controler #guess, #enter-btn, #reset-btn {
+    font-size: 20px;
+    font-family: 'Verdana', Verdana, Geneva, Tahoma, sans-serif;    
+    border: black solid 2px;
+}
+
+.controler #guess{
+    text-indent: 3px;
+}
+
+#enter-btn {
+    color: black;
+    background-color: greenyellow;
+}
+
+#reset-btn {
+    color: black;
+    background-color: rgb(246, 184, 98);
+}
+
+.limit {
+    /* background-color: blueviolet; */
+    position: absolute;
+    top: 70%;
+    transform: translate(0%, -50%);
+    width: 99%;
+    height: 100px;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.limit .text-line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    align-items: center;
+    display: flex;
+}
+
+#a, #b {
+    margin-top: 5px;
+    text-align: center;
+    align-self: center;
+    width: 60px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Verdana', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#b {
+    margin-left: 8px;
+}
+
+.mine-bar {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 495px;
+    height: 30px;
+    border: black solid 2px;
+    background-position: center;
+    background: transparent;
+}
+
+.mine-bar #health-bar {
+    position: absolute;
+    height: 100%;
+    background-color: greenyellow;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+
+.lose {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    height: 98%;
+    background-color: white;
+    align-content: center;
+    z-index: -1;
+}
+
+.lose .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+
+.win {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    height: 98%;
+    background-color: white;
+    align-content: center;
+    z-index: -1;
+}
+
+.win .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+#play-again {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 200px;
+    font-size: 30px;
+    font-family: 'Verdana', Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    background-color: greenyellow;
+}

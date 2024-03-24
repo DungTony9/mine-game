@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lose">
+        <div class="text">You lose</div>
+        <button id="play-again" onclick="reset()">Play Again</button>
+    </div>
+    <div class="win">
+        <div class="text">Congratulations! You won!</div>
+        <button id="play-again" onclick="reset()">Play Again</button>
+    </div>
+    <main>
+        
+        <div class="title">
+            <h1>Welcome to Mine game</h1>
+        </div>
+        <div class="mine-bar">
+            <span id="health-bar" style="left: 0%; right: 0%; width: 100%;"></span>
+        </div>
+        <div class="limit">
+            <div class="text-line"><h2>Enter number between</h2> <div id="a">1</div><h2>and</h2><div id="b">100</div></div> 
+        </div>
+        <div class="enter-number">
+            <div class="controler">    
+                <input type="number" min="1" id="guess" placeholder="Enter number here" onkeyup="enterInput(event)" required>
+                <input type="button" value="Enter" id="enter-btn">
+                <input type="button" value="Reset" id="reset-btn" onclick="reset()">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
