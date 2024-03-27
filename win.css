@@ -1,0 +1,41 @@
+.win {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    height: 98%;
+    background-color: white;
+    align-content: center;
+    z-index: -1;
+}
+
+.win .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+#play-again {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 200px;
+    font-size: 30px;
+    font-family: 'Verdana', Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+#play-again:hover {
+    background-color: rgb(128, 189, 37);
+    transition: 0.5s;
+}
+
+#play-again:active {
+    background-color: rgba(172, 255, 47, 0.326);
+}
