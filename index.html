@@ -5,20 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mine game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="mine-icon-512x512-1aaxg24x.png">
 </head>
 <body>
-    <div class="lose">
-        <div class="text">You lose</div>
-        <button id="play-again" onclick="reset()">Play Again</button>
-    </div>
-    <div class="win">
-        <div class="text">Congratulations! You won!</div>
-        <button id="play-again" onclick="reset()">Play Again</button>
-    </div>
     <main>
-        
         <div class="title">
-            <h1>Welcome to Mine game</h1>
+            <h1><img src="mine-icon-512x512-1aaxg24x.png" class="mine-img"> Welcome to Mine game</h1>
+            <p>Try to avoid the mine!</p>
         </div>
         <div class="mine-bar">
             <span id="health-bar" style="left: 0%; right: 0%; width: 100%;"></span>
@@ -28,7 +21,7 @@
         </div>
         <div class="enter-number">
             <div class="controler">    
-                <input type="number" min="1" id="guess" placeholder="Enter number here" onkeyup="enterInput(event)" required>
+                <input type="number" min="1" id="guess" placeholder="Enter number here" min="1" max="100" onkeyup="enterInput(event)" required>
                 <input type="button" value="Enter" id="enter-btn">
                 <input type="button" value="Reset" id="reset-btn" onclick="reset()">
             </div>
