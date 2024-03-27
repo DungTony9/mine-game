@@ -16,9 +16,7 @@ function reset() {
     clearInput();
     bar.style.right = "0%";
     bar.style.left = "0%";
-    bar.style.width = "100%";
-    loseScreen.style.zIndex = "-1";
-    winScreen.style.zIndex = "-1";
+    bar.style.width = "100%"; 
 }
 function action(){
     const guess = Number(document.getElementById("guess").value);
@@ -38,10 +36,10 @@ function action(){
         makeChange()
     }
     else{
-        lose();
+        window.location.href = "lose.html";
     }
     if(b-a <= 2) {
-        win();
+        window.location.href = "win.html";
     }
     clearInput();
     return;
@@ -61,10 +59,10 @@ function makeChange() {
     bar.style.left = `${a-1}%`;
     bar.style.width = `${b-a+1}%`;    
     bar.style.right = `${100-b}%`;
+    document.getElementById("guess").min = `${a+1}`;
+    document.getElementById("guess").max = `${b-1}`;
 }
-function win() {
-    winScreen.style.zIndex = "2";
-}
-function lose() {
-    loseScreen.style.zIndex = "2";
+document.addEventListener("keyup", check);
+function check(e) {
+    if(e.which == 82) reset();
 }
