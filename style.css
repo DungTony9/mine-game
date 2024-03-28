@@ -1,17 +1,217 @@
-@media (max-width: 768px) {
+@media (max-width: 679px) {
+    /* update styles for smaller screens */
+    h1{
+        font-size: 40px;
+    }
+    main .title .mine-img {
+        width: 30px;
+        height: 30px;
+    }
+    p {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    main .limit {
+        font-size: 15px;
+    }
+    main .limit .text-line {
+        width: 400px;
+        font-size: 15px;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        justify-content: center;
+    }
+    main .limit .text-line h2 #a {
+        font-size: 15px;
+    }
+    main .limit .text-line h2 #b {
+        font-size: 15px;
+    }
+    main .mine-bar {
+        width: 300px;
+        height: 25px;
+    }
+    main .enter-number .controler #guess {
+        font-size: 15px;
+        width: 150px;
+    }
+    main .enter-number .controler #enter-btn {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    main .enter-number .controler #reset-btn {
+        font-size: 15px;
+    }
 }  
-@media (max-width: 767px) { 
+
+@media (min-width: 680px) { 
+    /* update styles for medium screens */
+    h1{
+        font-size: 50px;
+    }
+    main .title .mine-img {
+        width: 33.75px;
+        height: 33.75px;
+    }
+    main .title p {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    main .limit {
+        font-size: 20px;
+    }
+    main .limit .text-line {
+        width: 450px;
+        font-size: 20px;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        justify-content: center;
+    }
+    main .limit .text-line h2 #a {
+        font-size: 20px;
+    }
+    main .limit .text-line h2 #b {
+        font-size: 20px;
+    }
+    main .mine-bar {
+        width: 450px;
+        height: 30px;
+    }
+    main .enter-number .controler #guess {
+        font-size: 20px;
+        width: 200px;
+    }
+    main .enter-number .controler #enter-btn {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    main .enter-number .controler #reset-btn {
+        font-size: 20px;
+    }
 }
+
 @media (min-width: 768px) { 
+    /* update styles for medium screens */
+    h1{
+        font-size: 60px;
+    }
+    main .title h1 .mine-img {
+        width: 45px;
+        height: 45px;
+    }
+    main .title p {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    main .limit {
+        font-size: 20px;
+    }
+    main .limit .text-line {
+        width: 450px;
+        font-size: 20px;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        justify-content: center;
+    }
+    main .limit .text-line h2 #a {
+        font-size: 20px;
+    }
+    main .limit .text-line h2 #b {
+        font-size: 20px;
+    }
+    main .mine-bar {
+        width: 450px;
+        height: 30px;
+    }
+    main .enter-number .controler #guess {
+        font-size: 20px;
+        width: 200px;
+    }
+    main .enter-number .controler #enter-btn {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    main .enter-number .controler #reset-btn {
+        font-size: 20px;
+    }
 }
+@media (min-width: 992px) { 
+    /* update styles for larger screens */
+    h1 {
+        font-size: 80px;
+    }
+    main .title h1 .mine-img {
+        width: 60px;
+        height: 60px;
+    }
+    main .title p {
+        font-size: 50px;
+        transform: translate(0%, -50%);
+    }
+    main .limit {
+        font-size: 30px;
+    }
+    main .limit .text-line {
+        width: 700px;
+        font-size: 30px;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        justify-content: center;
+    }
+    main .limit .text-line h2 #a {
+        font-size: 30px;
+    }
+    main .limit .text-line h2 #b {
+        font-size: 30px;
+    }
+    main .mine-bar {
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 495px;
+        height: 30px;
+    }
+    main .enter-number .controler #guess {
+        font-size: 20px;
+        width: 200px;
+    }
+    main .enter-number .controler #enter-btn {
+        font-size: 20px;
+    }
+    main .enter-number .controler #reset-btn {
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 566px) {
+    main .title h1 {
+        top: 5%;
+    }
+    main .mine-bar {
+        left: 50%;
+        transform: translate(-50%, 70%);
+        width: 495px;
+        height: 30px;
+    }
+}
+
 main {
     top: 0;
     left: 0;
     position: absolute;
-    width: 100% !important;
+    width: 100%;
     height: 100% ;
-    background-color: white;
-    z-index: -1;
 }
 
 .mine-img {
@@ -24,18 +224,17 @@ main {
     width: 99%;
     font-size: 40px;
     text-align: center;
-    top: 15%;
+    top: 12%;
     /* background-color: blue; */
 }
 .enter-number {
     position: absolute;
-    top: 80%;
+    bottom: 10px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,70%);
     width: 60%;
     text-align: center;
     padding: 30px;
-    /* background-color: brown; */
 }
 
 
@@ -43,11 +242,6 @@ main {
     font-size: 20px;
     font-family: 'Verdana', Verdana, Geneva, Tahoma, sans-serif;    
     border: black solid 2px;
-}
-
-.controler #guess{
-    text-indent: 3px;
-    width: 210px;
 }
 
 #enter-btn {
@@ -79,7 +273,6 @@ main {
 }
 
 .limit {
-    /* background-color: blueviolet; */
     position: absolute;
     top: 70%;
     transform: translate(0%, -50%);
