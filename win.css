@@ -1,12 +1,10 @@
-.win {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    width: 99%;
-    height: 98%;
-    background-color: white;
-    align-content: center;
-    z-index: -1;
+@media (max-width: 679px) {
+    body .win .text {
+        font-size: 40px;
+        width: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .win .text {
