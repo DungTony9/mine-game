@@ -16,12 +16,12 @@
         <div class="mine-bar">
             <span id="health-bar" style="left: 0%; right: 0%; width: 100%;"></span>
         </div>
-        <div class="limit">
-            <div class="text-line"><h2>Enter number between</h2> <div id="a">1</div><h2>and</h2><div id="b">100</div></div> 
+        <h2 class="limit">
+            <span class="text-line"><h2>Enter number between <span id="a"> 1 </span> and<span id="b">100</span></span></h2></span>
         </div>
         <div class="enter-number">
             <div class="controler">    
-                <input type="number" min="1" id="guess" placeholder="Enter number here" min="1" max="100" onkeyup="enterInput(event)" required>
+                <input type="number" style="text-indent: 3px; width: 210px;" min="1" id="guess" placeholder="Enter number here" min="1" max="100" onkeyup="enterInput(event)" required>
                 <input type="button" value="Enter" id="enter-btn">
                 <input type="button" value="Reset" id="reset-btn" onclick="reset()">
             </div>
